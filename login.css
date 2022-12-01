@@ -293,3 +293,77 @@ nav .icon:hover{
     margin-top: 30px;
     text-align: center;
 }
+.backbutton i{
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    .content h1 {
+        font-size: 40px !important;
+    }
+    .content h4{
+        font-size: 18px !important;
+    }
+    nav{
+        display: block;
+        padding: 0;
+    }
+    nav .icon{
+        display: inline-block;
+        padding: 15px 30px;
+    }
+    nav .search_box{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    nav.search_box input{
+        width: 90%;
+    }
+    nav ol{
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    nav ol li {
+        text-align: center;
+    }
+    nav ol li a{
+        color:black;
+        font-size: 28px;
+        display: block;
+        padding: 15px;
+    }
+    nav .bar{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        cursor: pointer;
+    }
+    nav .bar #times{
+        display: none;
+    }
+    #check:checked ~ nav .bar #times{
+        display: block;
+    }
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    } 
+    #check:checked ~ nav ol{
+        visibility: visible;
+        height: 210px;    
+    }
+    #check:checked ~ .content {
+        display: none;
+        visibility: hidden;
+    }
+
+}

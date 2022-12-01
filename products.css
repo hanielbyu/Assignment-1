@@ -1,0 +1,268 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 10em;
+    width: 100%;
+    background: rgb(48, 48, 48);
+    position: relative;
+   
+
+}
+
+nav .icon{
+    font-size: 45px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+nav ol{
+    list-style: none;
+    display: flex;
+    margin: auto 0;
+}
+
+nav ol li{
+    margin: 0 10px;
+}
+
+nav ol li a{
+    color: whitesmoke;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 360;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
+
+nav ol li:hover a{
+    background: lightgray;
+    color:rgb(48, 48, 48);
+
+}
+
+nav .search_box{
+    display:flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+
+}
+
+nav .search_box input{
+    border: none;
+    outline: none;
+    background: whitesmoke;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 15px;
+    width: 350px;
+}
+
+nav .search_box span{
+    color: rgb(48, 48, 48);
+    font-size: 20px;
+    background: whitesmoke;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor:pointer;
+    z-index: 1;
+}
+nav .search_box span:hover{
+    color: whitesmoke;
+}
+nav .search_box span::after{
+    height: 100%;
+    width: 100%;
+    content:'';
+    background: gray;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+nav .search_box span:hover::after{
+    width: 100%;
+}
+
+nav .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+
+nav .bar span{
+    position:absolute;
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+input[type="checkbox"]{
+    display: none;
+
+}
+
+@media screen and (max-width: 1250px) {
+
+    .content h1 {
+        font-size: 40px !important;
+    }
+    .content h4{
+        font-size: 18px !important;
+    }
+    nav{
+        display: block;
+        padding: 0;
+    }
+    nav .icon{
+        display: inline-block;
+        padding: 15px 30px;
+    }
+    nav .search_box{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    nav.search_box input{
+        width: 90%;
+    }
+    nav ol{
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    nav ol li {
+        text-align: center;
+    }
+    nav ol li a{
+        color:black;
+        font-size: 28px;
+        display: block;
+        padding: 15px;
+    }
+    nav .bar{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        cursor: pointer;
+    }
+    nav .bar #times{
+        display: none;
+    }
+    #check:checked ~ nav .bar #times{
+        display: block;
+    }
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    } 
+    #check:checked ~ nav ol{
+        visibility: visible;
+        height: 210px;    
+    }
+    #check:checked ~ .content {
+        display: none;
+        visibility: hidden;
+    }
+
+    
+    
+}   
+
+section{
+    background:url(./products.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    z-index: -1;
+    filter: brightness(50%);
+
+}
+
+.productchunk{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    text-transform: capitalize;
+    font-size: 62.5%;
+    
+}
+
+.productchunk h3{
+    color: rgb(48, 48, 48);
+    margin-top: 20px;
+    font-size: 20px;
+}
+.block {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+
+}
+.price {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.block .title {
+    font-size: 3.5rem;
+    color:  beige;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.block .container{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 2rem; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+        
+}
+
+.block .container .item{
+    text-align: center;
+    padding: 3rem 4rem;
+    background:whitesmoke;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    outline: 0.1rem solid #ccc;
+    outline-offset: -1.0rem;
+    cursor: pointer;
+}
+
+.block .container .item:hover{
+    outline: 0.25em solid rgb(48, 48, 48);
+    outline-offset: -1.0rem;
+    box-shadow: 2px 2px rgba(255, 255, 0, 0.133);
+
+}
+
+.block .container .product img{
+    height: 25rem;
+}
