@@ -174,7 +174,7 @@ input[type="checkbox"]{
     } 
     #check:checked ~ nav ol{
         visibility: visible;
-        height: 200px;    
+        height: 210px;    
     }
     #check:checked ~ .content {
         display: none;

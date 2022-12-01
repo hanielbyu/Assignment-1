@@ -110,10 +110,6 @@ nav .bar span{
     font-size: 35px;
 }
 
-input[type="checkbox"]{
-    display: none;
-
-}
 
 
 section{
@@ -198,8 +194,32 @@ section{
 
 .input-field i.icon{
     left: 0;
-
 }
 
+.page .checkbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    align-items: center;
+}
 
-    
+.checkbox .con {
+    display: flex;
+    align-items: center;
+}
+
+.con input{
+    margin: 0 8px;
+}
+
+.page a{
+    text-decoration: none;
+    color:rgb(48, 48, 48);
+}
+.page a:hover{
+    text-decoration: underline;
+}
+
+.page input{
+    color: rgb(48, 48, 48);
+}
