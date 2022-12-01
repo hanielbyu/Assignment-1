@@ -223,3 +223,33 @@ section{
 .page input{
     color: rgb(48, 48, 48);
 }
+
+.formlog .text{
+    color: #333;
+    font-size: 15px;
+}
+
+.formlog .button{
+    margin-top: 35px;
+}
+
+.formlog .button input{
+    border: none;
+    background-color:rgb(141, 141, 141);
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.button input:hover{
+    background-color: rgb(150, 147, 147);
+
+}
+
+
+.formlog .signup-log{
+    margin-top: 30px;
+    text-align: center;
+}
