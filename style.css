@@ -255,3 +255,9 @@ button:hover span {
 button:hover {
     border: none;
 }
+
+
+#catalogBtn {
+    text-decoration: none;
+    color: white;
+}
