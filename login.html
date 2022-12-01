@@ -8,7 +8,7 @@
   <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
   <link rel="stylesheet" href="./login.css">
 </head>
-<body class="background"></body>
+<body>
   <nav>
     <div class="icon">UMPLIFY</div>
       <div class="search_box">
@@ -27,7 +27,7 @@
 <div class="body1">
     <div class="block">
         <div class="page">
-            <div class="formlog">
+            <div class="form log">
                 <span class="head">Log in</span>
 
                 <form action="#">
@@ -57,6 +57,49 @@
                     </span>
                 </div>
             </div>
+                <!-- SIGNUP FORM -->
+            <div class="form sign">
+                <span class="head">Sign Up</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" required>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="fa fa-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Enter your password" required>
+                        <i class="fa fa-lock icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Confirm your password" required>
+                        <i class="fa fa-lock icon" aria-hidden="true"></i>
+                    </div>
+                        <div class="checkbox">
+                            <div class="con">
+                                <input type="checkbox" id="text">
+                                <label for="text" class="check">Remember Me</label>
+                            </div>
+                            <a href="#">Forgot your password?</a>
+                        </div>
+                        <div class="input-field button">
+                            <input type="button" value="Log in" required>
+                        </div>
+                </form>
+
+                <div class="signup-log">
+                    <span class="text">Already have an account?
+                        <a href="#" class="text login">Log In</a>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+<script src="./login.js"></script>
+</body>
+</html>
