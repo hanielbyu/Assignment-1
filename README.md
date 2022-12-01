@@ -1,4 +1,4 @@
-# UMPLIFLY 
+# UMPLIFY 
 Umplify(fictional), is an ecommerce company for music goods and merchandise. Their original website 
 is too messy, non responsive and not user friendly. My idea is to revamp their website to be more
 aesthetically pleasing and responsive website. This is so that consumers who use 
