@@ -61,7 +61,7 @@ function signup(){
     const password1 = document.getElementById("password1").value
     const password2 = document.getElementById("password2").value
     const found = users.find(o => o.email === email)
-    if (password1 === password2 && !found){
+    if (password1 === password2 && !found && email !== "" && password1 !== ""){
         //Apend information 
         users.push({'email': email, 'password': password1})
         alert("signup succesful")

@@ -275,7 +275,6 @@ section{
     width: 400px;
     height: 400px;
     margin: 20px;
-    z-index: -1;
 }
 
 img {
@@ -396,5 +395,9 @@ img {
     .block .container{
         flex-wrap: wrap;
     }
+    .item{
+        z-index: -1;
+    }
 
     
+}
