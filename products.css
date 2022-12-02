@@ -322,3 +322,12 @@ img {
 .flip img{
     transform: scaleX(-1);
 }
+
+.block .container .flip:hover img{
+    transform: scaleX(-1);
+}
+
+.block .container .item{
+    
+}
+    
