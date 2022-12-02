@@ -46,7 +46,8 @@ console.log(users)
 const found = users.find(o => o.email === email)
 if(found && password === found.password){
         console.log(" Login succesful")
-        window.location.href = "index.html"
+        window.location.href = "index_logged.html"
+        document.getElementById("logcontent").value ="Log Out"
 }
 else {
     console.log("login failed")

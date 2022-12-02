@@ -14,7 +14,7 @@ nav{
     padding: 10px 10em;
     width: 100%;
     background: rgb(48, 48, 48);
-    position: relative;
+    position: fixed;
    
 
 }
@@ -189,7 +189,7 @@ section{
     background:url(./products.jpg);
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     background-position: center;
     background-size: cover;
     top: 0;
@@ -209,6 +209,7 @@ section{
     transition: all 0.3s linear;
     text-transform: capitalize;
     font-size: 62.5%;
+    z-index: -1;
     
 }
 
@@ -238,9 +239,6 @@ section{
 }
 
 .block .container{
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
-    gap: 2rem; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -277,6 +275,7 @@ section{
     width: 400px;
     height: 400px;
     margin: 20px;
+    z-index: -1;
 }
 
 img {
@@ -289,6 +288,7 @@ img {
     margin-top: 70px;
     position: relative;
     color: rgb(86, 86, 86);
+    
 }
 
 
@@ -324,10 +324,77 @@ img {
 }
 
 .block .container .flip:hover img{
-    transform: scaleX(-1);
-}
-
-.block .container .item{
+    transform: scaleX(-1) scale(1.1);
     
 }
+@media screen and (max-width: 1250px) {
+
+    .content h1 {
+        font-size: 40px !important;
+    }
+    .content h4{
+        font-size: 18px !important;
+    }
+    nav{
+        display: block;
+        padding: 0;
+    }
+    nav .icon{
+        display: inline-block;
+        padding: 15px 30px;
+    }
+    nav .search_box{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    nav.search_box input{
+        width: 90%;
+    }
+    nav ol{
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    nav ol li {
+        text-align: center;
+    }
+    nav ol li a{
+        color:black;
+        font-size: 28px;
+        display: block;
+        padding: 15px;
+    }
+    nav .bar{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        cursor: pointer;
+    }
+    nav .bar #times{
+        display: none;
+    }
+    #check:checked ~ nav .bar #times{
+        display: block;
+    }
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    } 
+    #check:checked ~ nav ol{
+        visibility: visible;
+        height: 210px;    
+    }
+    #check:checked ~ .content {
+        display: none;
+        visibility: hidden;
+    }
+    .block .container{
+        flex-wrap: wrap;
+    }
+
     
