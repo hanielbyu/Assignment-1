@@ -40,7 +40,7 @@
 
             <div class="container">
 
-                <div class="item" data-name="i-1" id="myBtn">
+                <div class="item" onclick="showModal('1')">
                     <img src="./guitar.png" alt=""
                     width="30%"
                     height="auto">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <div class="item" data-name="i-2">
+                <div class="item" onclick="showModal('2')">
                     <img src="./guitar1.png" alt=""
                     width="30%"
                     height="auto">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-                <div class="item" data-name="i-3">
+                <div class="item" onclick="showModal('3')">
                     <img src="./guitar3.png" alt=""
                     width="30%"
                     height="auto">
@@ -70,7 +70,7 @@
                     </div>
                 </div>
 
-                <div class="item flip" data-name="i-4">
+                <div class="item flip" onclick="showModal('4')">
                     <img src="./guitar5.png" alt=""
                     width="30%"
                     height="auto"
@@ -87,15 +87,86 @@
         </div>
 
     </div>
-    <div id="myModal" class="modal">
-
+    <div id="myModal1" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close">&times;</span>
+          <span class="close" onclick="closeModal()"><i class="fa fa-close"></i></span>
           <img class="imgModal" src="./guitar.png" alt=""
             width="30%"
             height="auto">
-            <h1>hahahaha</h1>
+            <h1>Classic Vibe 70s Stratocaster</h1>
+            <br/>
+            <p>Well built and great tone. 70s style vintage guitar, 
+                designed to help you find your sound. Made out of rosewood with a smooth finish, painted in cherry red with a white pickguard.</p>
+            <br/><br/>
+                <div class="cost">
+                    <p>$599</p>
+                </div>
+            <br/>
+            <button class="click" onclick="clickButton()"><i class="fa fa-shopping-cart"></i> Add to cart </button>
+        </div>
+      
+      </div>
+      <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()"><i class="fa fa-close"></i></span>
+          <img class="imgModal" src="./guitar1.png" alt=""
+            width="30%"
+            height="auto">
+            <h1>Hollowbody Humbucker Guitar</h1>
+            <br/>
+            <p>Hollowbody Humbucker Guitar, creates a warm full body sound with a variety of tones with the responsive knobs.
+                 Its C shaped neck creates a vintage feel for the guitarist </p>
+            <br/><br/>
+            <div class="cost">
+            <p>$399</p>
+            </div>
+            <br/>
+            <button class="click" onclick="clickButton()"><i class="fa fa-shopping-cart"></i> Add to cart </button>
+        </div>
+      
+      </div>
+
+      <div id="myModal3" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()"><i class="fa fa-close"></i></span>
+          <img class="imgModal" src="./guitar3.png" alt=""
+            width="30%"
+            height="auto">
+            <h1>Classical Acoustic Guitar</h1>
+            <br/>
+            <p>Acoustic Classical Guitar, Nylon string, A good quality for its price. 
+                It has a coated body hence, it last longer and retains its original sound longer</p>
+            <br/><br/>
+            <div class="cost">
+            <p>$299</p>
+            </div>
+            <br/>
+            <button class="click" onclick="clickButton()"><i class="fa fa-shopping-cart"></i> Add to cart </button>
+        </div>
+      
+      </div>
+
+      <div id="myModal4" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()"><i class="fa fa-close"></i></span>
+          <img class="imgModal flip" src="./guitar5.png" alt=""
+            width="30%"
+            height="auto">
+            <h1>Hollowbody Guitar Sunburst</h1>
+            <br/>
+            <p>A very dark toned guitar, Humbuckers that create a very full and warm tone with a nice sunburst look.
+                has locking tuners to succesfully avoid the guitar from becoming off tune.
+            </p>
+            <br/><br/>
+            <div class="cost">
+            <p>$359</p>
+            </div>
+            <br/>
+            <button onclick="clickButton()"><i class="fa fa-shopping-cart"></i> Add to cart </button>
         </div>
       
       </div>
