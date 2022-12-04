@@ -445,6 +445,20 @@ img {
         flex-wrap: wrap;
     }
 
+    .modal .modal-content .imgModal{
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    .modal .modal-content h1{
+        font-size: 30px;
+    }
+    .modal .modal-content p{
+        font-size: 15px;
+    }
+    .modal .modal-content .cost{
+        font-size: 15px;
+    }
+
     /* Button used to open the contact form - fixed at the bottom of the page */
 
 }
