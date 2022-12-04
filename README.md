@@ -60,7 +60,9 @@ In this project I used HTML, CSS and JS(Javascript). as well as Font awesomes ic
 
 
 #Credits
+
 ##Content
+
 Some Content was taken from https://www.w3schools.com/ https://www.youtube.com/@MrWebDesignerAnas
 https://www.youtube.com/@CodingLabYT https://www.youtube.com/@EasyTutorialsVideo 
 
