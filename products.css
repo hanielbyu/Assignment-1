@@ -444,6 +444,9 @@ img {
     .block .container{
         flex-wrap: wrap;
     }
+    .modal .modal-content{
+        height: 800px;
+    }
 
     .modal .modal-content .imgModal{
         height: 200px;
