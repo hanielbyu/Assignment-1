@@ -7,13 +7,13 @@
   <title>UMPLIFY</title>
   <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="./products.css">
-  <script src="./product.js" defer></script>
+  <link rel="stylesheet" href="../Normalize.css">
+  <script src="../js/product.js" defer></script>
 </head>
 <body>
-<input type="checkbox" id="check">
+<input class="indexbox" type="checkbox" id="check">
   <nav>
-    <div class="icon">UMPLIFY</div>
+    <div class="icon" onclick="window.location.href='index.html'">UMPLIFY</div>
       <div class="search_box">
         <input type="search" placeholder="Search...">
         <span class="fa fa-search"></span>
@@ -30,18 +30,18 @@
           </label>
     </nav>
     
-    <section></section>
+    <section id="productbg"></section>
 
     <div class="productchunk">
     
-        <div class="block">
+        <div class="blockpro">
 
             <h3 class="title">CATALOG</h3>
 
             <div class="container">
 
                 <div class="item" onclick="showModal('1')">
-                    <img src="./guitar.png" alt=""
+                    <img src="../img/guitar.png" alt=""
                     width="30%"
                     height="auto">
                     <div class="content">
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="item" onclick="showModal('2')">
-                    <img src="./guitar1.png" alt=""
+                    <img src="../img/guitar1.png" alt=""
                     width="30%"
                     height="auto">
                     <div class="content">
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="item" onclick="showModal('3')">
-                    <img src="./guitar3.png" alt=""
+                    <img src="../img/guitar3.png" alt=""
                     width="30%"
                     height="auto">
                     <div class="content">
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="item flip" onclick="showModal('4')">
-                    <img src="./guitar5.png" alt=""
+                    <img src="../img/guitar5.png" alt=""
                     width="30%"
                     height="auto"
                     transform: scaleX(-1);>
@@ -91,7 +91,7 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close" onclick="closeModal()"><i class="fa fa-close"></i></span>
-          <img class="imgModal" src="./guitar.png" alt=""
+          <img class="imgModal" src="../img/guitar.png" alt=""
             width="30%"
             height="auto">
             <h1>Classic Vibe 70s Stratocaster</h1>
@@ -111,7 +111,7 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close" onclick="closeModal()"><i class="fa fa-close"></i></span>
-          <img class="imgModal" src="./guitar1.png" alt=""
+          <img class="imgModal" src="../img/guitar1.png" alt=""
             width="30%"
             height="auto">
             <h1>Hollowbody Humbucker Guitar</h1>
@@ -132,7 +132,7 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close" onclick="closeModal()"><i class="fa fa-close"></i></span>
-          <img class="imgModal" src="./guitar3.png" alt=""
+          <img class="imgModal" src="../img/guitar3.png" alt=""
             width="30%"
             height="auto">
             <h1>Classical Acoustic Guitar</h1>
@@ -153,7 +153,7 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close" onclick="closeModal()"><i class="fa fa-close"></i></span>
-          <img class="imgModal flip" src="./guitar5.png" alt=""
+          <img class="imgModal flip" src="../img/guitar5.png" alt=""
             width="30%"
             height="auto">
             <h1>Hollowbody Guitar Sunburst</h1>

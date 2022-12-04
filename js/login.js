@@ -5,28 +5,15 @@ log = document.querySelector(".login");
 
 // js code 
 
-sign.addEventListener("click",( )=>{
-    block.classList.add("active");
+sign.addEventListener("click",( )=>{            //Switch between log in and sign up 
+    block.classList.add("active");              //refer to CSS
 });
 log.addEventListener("click",( )=>{
     block.classList.remove("active");
 });
 
 
-// function initUsers() {
-//   users = [
-//     {
-//         "email":"hanielbyu@gmail.com",
-//         "password":"0000"
-//     },
-//     {
-//         "email":"s10247873@connect.np.edu.sg",
-//         "password":"0001"
-//     }
-//   ]
-//   return users
-// }
-// const found = array1.find(o => o.email === 'hanielbyu@gmail.com');
+// Login and signup JS
 
 let users = [
 {

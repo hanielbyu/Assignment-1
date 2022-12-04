@@ -17,10 +17,6 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -29,8 +25,7 @@ window.onclick = function(event) {
   }
 }
 
-function clickButton() {
-    console.log("hello")
+function clickButton() {                      // Add to cart button
     modal.style.display = "none";
     alert("Added to cart succesfully")
 }

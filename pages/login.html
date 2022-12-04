@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UMPLIFY</title>
   <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
-  <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="../Normalize.css">
 </head>
 <body>
   <nav>
-    <div class="icon">UMPLIFY</div>
+    <div class="icon" onclick="window.location.href='index.html'"">UMPLIFY</div>
       <div class="search_box">
         <input type="search" placeholder="Search...">
         <span class="fa fa-search"></span>
@@ -23,7 +23,8 @@
         </ol>
     </nav>
     
-    <section></section>
+    <section id="loginbg"></section>
+
     <div class="backbutton">
         <a href="index.html" class="previous"><i class="fa fa-chevron-circle-left"></i></a>
     </div>
@@ -85,8 +86,8 @@
                     </div>
                         <div class="checkbox">
                             <div class="con">
-                                <input type="checkbox" id="text">
-                                <label for="text" class="check">Remember Me</label>
+                                <input type="checkbox" id="loginCheck">
+                                <label for="loginCheck" class="check">Remember Me</label>
                             </div>
                             <a href="#">Forgot your password?</a>
                         </div>
@@ -104,6 +105,6 @@
         </div>
     </div>
 </div>
-<script src="./login.js"></script>
+<script src="../js/login.js"></script>
 </body>
 </html>

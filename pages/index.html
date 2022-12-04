@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UMPLIFY</title>
   <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../Normalize.css">
 </head>
 <body>
-  <input type="checkbox" id="check">
+  <input class="indexbox" type="checkbox" id="check">
   <nav>
-    <div class="icon">UMPLIFY</div>
+    <div class="icon" onclick="window.location.href='index.html'"">UMPLIFY</div>
       <div class="search_box">
         <input type="search" placeholder="Search...">
         <span class="fa fa-search"></span>
@@ -19,7 +19,7 @@
 
     <ol>
       <li><a href="products.html">View CATALOG</a></li>
-      <li><a href="index.html" id="logcontent">Logout</a></li>
+      <li><a href="login.html" id="logcontent">Login</a></li>
       <li><a href="#"><i class="fa fa-shopping-cart"></i> Cart</a></li>
     </ol>
     <label for="check" class="bar">
@@ -27,8 +27,8 @@
       <span class="fa fa-times" id="times"></span>
     </label>
   </nav>
-  <section></section>
-  <div class="content">
+  <section id="mainbg"></section>
+  <div class="content" id="indexcontent">
     <h1>SHOP NOW</h1>
     <h4>All your guitar goods in one place!</h4>
     <div>
